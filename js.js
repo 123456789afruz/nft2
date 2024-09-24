@@ -264,3 +264,14 @@ const cards3 = ProductData3.map(card => {
 wrapper3.innerHTML = cards3
 
 
+const modal = document.querySelector('.modal')
+const openModal = document.querySelector('#open-btn')
+const closeModal = document.querySelector('.close')
+
+openModal.onclick = () => {
+    modal.classList.add('active')
+}
+closeModal.onclick = () => {
+    modal.classList.remove('active')
+}
+
